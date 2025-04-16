@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://m2mniiow3g6y"]
+[gd_scene load_steps=6 format=3 uid="uid://m2mniiow3g6y"]
 
 [ext_resource type="Script" path="res://scripts/characters/player/player.gd" id="1_qwxmw"]
 [ext_resource type="Script" path="res://scripts/characters/player/facing.gd" id="2_3ssgc"]
 [ext_resource type="Texture2D" uid="uid://fja55dj3djhm" path="res://assets/characters/player_idle.png" id="2_7rw2v"]
+[ext_resource type="PackedScene" uid="uid://cy25sjwtgdv7w" path="res://scenes/ui/arrow.tscn" id="4_cgbjh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v4yln"]
 size = Vector2(0.4, 1.8)
@@ -23,3 +24,10 @@ character = NodePath("..")
 
 [node name="Sprite2D" type="Sprite2D" parent="Facing"]
 texture = ExtResource("2_7rw2v")
+
+[node name="arrow_ui" type="Node2D" parent="."]
+visible = false
+position = Vector2(-3, 0)
+
+[node name="Arrow" parent="arrow_ui" instance=ExtResource("4_cgbjh")]
+position = Vector2(-1, -93)

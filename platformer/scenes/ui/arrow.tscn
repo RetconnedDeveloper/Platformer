@@ -1,12 +1,11 @@
 [gd_scene load_steps=2 format=3 uid="uid://cy25sjwtgdv7w"]
 
-[ext_resource type="Texture2D" uid="uid://7wiwiwo2fqti" path="res://assets/ui/arrow.png" id="1_jfhl7"]
+[ext_resource type="Texture2D" uid="uid://7wiwiwo2fqti" path="res://assets/ui/arrow.png" id="1_u3ns0"]
 
 [node name="Arrow" type="Node2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-visible = false
-texture = ExtResource("1_jfhl7")
+texture = ExtResource("1_u3ns0")
 
 [node name="Marker2D" type="Marker2D" parent="."]
 position = Vector2(1, -49)
